@@ -1,0 +1,14 @@
+name:  "Hello Workflow World"
+
+on:
+  push: 
+    branches:
+      - main
+      - production
+
+jobs:
+  hello_world:
+    runs-on: ubantu-latest
+    steps:
+      - name: "Print Hello world"
+        run: echo "Hello World"
