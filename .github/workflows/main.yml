@@ -14,3 +14,7 @@ jobs:
 
       - name: "Print Current date"
         run: date
+        
+
+      - name: "Print Branch name"
+        run: echo $branch
