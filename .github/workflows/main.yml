@@ -17,4 +17,4 @@ jobs:
         
 
       - name: "Print Branch name"
-        run: echo $branch
+        run: echo $branches
