@@ -3,9 +3,7 @@ name:  "Hello Workflow World"
 on:
   push: 
     branches:
-      - main
-      - master
-      - production
+      - $branches
 
 jobs:
   hello_world:
