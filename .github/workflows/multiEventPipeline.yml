@@ -4,7 +4,6 @@ on:
     push:
         branches:
             - main
-            - test
             - master
 
     pull_request:  # event whenever a pull request is made to repository.
