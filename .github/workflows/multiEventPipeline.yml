@@ -6,18 +6,20 @@ on:
             - main
             - test
 
-    pull_request:
+    pull_request:  # event whenever a pull request is made to repository.
         branches: 
             - main
 
 jobs:
     on-push:
+        if: github.event_name == 'push'
         runs-on: ubuntu-latest
         steps:
             - name: "Running on main push"
               run: echo " Running on main push"
-
+        
     on-pull-request:
+         if: github.event_name == 'pull_request'
          runs-on: ubuntu-latest
          steps:
             - name: "Running on pull request"
