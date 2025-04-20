@@ -3,7 +3,9 @@ name:  "Hello Workflow World"
 on:
   push: 
     branches:
-      - $branches
+      - main
+      - master
+      - productions
 
 jobs:
   hello_world:
@@ -14,7 +16,3 @@ jobs:
 
       - name: "Print Current date"
         run: date
-        
-
-      - name: "Print Branch name"
-        run: echo $branches
